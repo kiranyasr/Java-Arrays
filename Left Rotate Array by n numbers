@@ -8,6 +8,9 @@ class Main{
             a[i]=sc.nextInt();
         }
         int d=sc.nextInt(); // no of rotation places
+         if(d>n){
+            d=d%n;
+        }
         int[] temp=new int[d];
         for(int i=0;i<d;i++){
             temp[i]=a[i];
